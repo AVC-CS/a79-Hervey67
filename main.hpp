@@ -44,12 +44,10 @@ int deleteVector(vector<int> &number, int usernum)
     // TODO: erase EVERY occurrence of usernum from the vector.
     int cnt = 0;
     for(auto it = number.begin(); it != number.end(); it++){
-        if (*it == usernum){
+        while(it != number.end() && *it == usernum){
             it = number.erase(it);
-            cnt += 1;
+            cnt++;
         }
-        else 
-            it += 1;
     }
     return cnt; 
 }
