@@ -9,7 +9,7 @@ int main()
 	srand(time(NULL));
 
 	makeVector(number);
-	printVector(number);
+	printVector(number); 
 
 	usernum = getInput();
 	insertVector(number, usernum);
