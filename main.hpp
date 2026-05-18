@@ -50,7 +50,7 @@ int deleteVector(vector<int> &number, int usernum)
         }
     }
     return cnt; 
-}
+} 
 
 int getInput(void)
 {
