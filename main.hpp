@@ -30,6 +30,12 @@ void makeVector(vector<int> &number)
 void insertVector(vector<int> &number, int usernum)
 {
     // TODO: insert usernum into the sorted vector while keeping it sorted.
+    for(auto it = number.begin(); it != number.end(); it++){
+        if(*it > usernum){
+            number.insert(it, usernum);
+            return;
+        }
+    }
 }
 
 int deleteVector(vector<int> &number, int usernum)
